@@ -74,7 +74,9 @@ Es la puerta de entrada al programa. Pregunta cuántos jugadores van a jugar y l
 
 Es recomendado refrescar el clon del repositorio en el archivo local:
 
+```bash
 git pull origin main
+```
 
 Desde la carpeta `src/`, ejecutar en la terminal:
 
