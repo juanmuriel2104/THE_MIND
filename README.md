@@ -1,5 +1,8 @@
 ## The Mind
 
+![UMLFinal](https://github.com/user-attachments/assets/fb61b002-e074-48a6-af75-8a49290f5bde)
+
+
 Proyecto para la materia **Estructura de Datos** — Universidad, tercer semestre.
 
 Implementación del juego de cartas *The Mind* en **C++**, desarrollado como trabajo en equipo.
