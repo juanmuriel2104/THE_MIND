@@ -13,4 +13,19 @@ bool Carta::operator<(const Carta& otra) const {
 
 std::string Carta::toString() const {
     return "[" + std::to_string(numero) + "]";
+
+}
+void Carta::guardar(std::ofstream& archivo) const {
+    archivo.write(reinterpret_cast<const char*>(&numero), sizeof(int));
+    archivo.write(reinterpret_cast<const char*>(&jugada), sizeof(bool));
+}
+
+Carta* Carta::cargar(std::ifstream& archivo) {
+    int num;
+    bool jug;
+    archivo.read(reinterpret_cast<char*>(&num), sizeof(int));
+    archivo.read(reinterpret_cast<char*>(&jug), sizeof(bool));
+    Carta* c = new Carta(num);
+    if (jug) c->marcarJugada();
+    return c;
 }
