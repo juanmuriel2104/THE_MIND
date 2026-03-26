@@ -13,7 +13,7 @@ void Tablero::mostrarEstado(int nivel, int vidas, int ultimaCarta) {
     mostrarSeparador();
     std::cout << " Nivel   : " << nivel << "\n";
     std::cout << " Vidas   : ";
-    for (int i = 0; i < vidas; i++) std::cout << "*";
+    for (int i = 0; i < vidas; i++) std::cout << "V";
     std::cout << "\n";
     std::cout << " En mesa : ";
     if (ultimaCarta == 0)
